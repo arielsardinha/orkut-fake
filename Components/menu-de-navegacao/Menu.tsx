@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu, BoxMenu } from "./MenuNavStyled";
+import { Link } from "@material-ui/core";
 import {
   ButtonGroup,
   Button,
@@ -31,10 +32,18 @@ const MenuDeNavegacao = () => (
               alignItems: "center",
             }}
           >
-            <Button href="">Inicio</Button>
-            <Button href="">Perfil</Button>
-            <Button href="">Página de recados</Button>
-            <Button href="">Comunidades</Button>
+            <Button>
+              <a href="">Inicio</a>
+            </Button>
+            <Button>
+              <a href="">Perfil</a>
+            </Button>
+            <Button>
+              <a href="">Página de recados</a>
+            </Button>
+            <Button>
+              <a href="">Comunidades</a>
+            </Button>
           </ButtonGroup>
         </Menu>
         <ButtonGroup
@@ -51,7 +60,12 @@ const MenuDeNavegacao = () => (
           <label htmlFor="btnPesquisa">
             <SearchIcon />
           </label>
-          <input type="text" id="btnPesquisa" className="btnPesquisa" placeholder="Pesquisa no Orkut"/>
+          <input
+            type="text"
+            id="btnPesquisa"
+            className="btnPesquisa"
+            placeholder="Pesquisa no Orkut"
+          />
         </ButtonGroup>
       </Box>
     </Container>

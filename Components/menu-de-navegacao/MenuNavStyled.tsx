@@ -31,7 +31,6 @@ export const BoxMenu = styled("div")`
       }
     }
   }
-
   button {
     padding: 0 10px;
     &:hover {
@@ -43,8 +42,9 @@ export const Menu = styled("nav")`
   display: flex;
   h1 {
     background-color: white;
-    border-radius: 5px;
-    padding: 0 10px;
+    border-radius: 15px;
+    padding: 0 15px;
     color: #d81d99;
+    font-weight: 800;
   }
 `;
